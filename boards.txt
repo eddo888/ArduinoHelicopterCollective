@@ -318,6 +318,45 @@ leonardo.build.extra_flags={build.usb_flags}
 
 ##############################################################
 
+helicopter.name=Arduino Helicopter
+helicopter.vid.0=0x2341
+helicopter.pid.0=0x0036
+helicopter.vid.1=0x2341
+helicopter.pid.1=0x8036
+helicopter.vid.2=0x2A03
+helicopter.pid.2=0x0036
+helicopter.vid.3=0x2A03
+helicopter.pid.3=0x8036
+
+helicopter.upload.tool=avrdude
+helicopter.upload.protocol=avr109
+helicopter.upload.maximum_size=28672
+helicopter.upload.maximum_data_size=2560
+helicopter.upload.speed=57600
+helicopter.upload.disable_flushing=true
+helicopter.upload.use_1200bps_touch=true
+helicopter.upload.wait_for_upload_port=true
+
+helicopter.bootloader.tool=avrdude
+helicopter.bootloader.low_fuses=0xff
+helicopter.bootloader.high_fuses=0xd8
+helicopter.bootloader.extended_fuses=0xcb
+helicopter.bootloader.file=caterina/Caterina-Leonardo.hex
+helicopter.bootloader.unlock_bits=0x3F
+helicopter.bootloader.lock_bits=0x2F
+
+helicopter.build.mcu=atmega32u4
+helicopter.build.f_cpu=16000000L
+helicopter.build.vid=0x2341
+helicopter.build.pid=0x8081
+helicopter.build.usb_product="Arduino Helicopter"
+helicopter.build.board=AVR_LEONARDO
+helicopter.build.core=arduino
+helicopter.build.variant=leonardo
+helicopter.build.extra_flags={build.usb_flags}
+
+##############################################################
+
 leonardoeth.name=Arduino Leonardo ETH
 leonardoeth.vid.0=0x2a03
 leonardoeth.pid.0=0x0040

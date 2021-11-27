@@ -12,10 +12,15 @@
  * copy and paste the leonardo arduino section in boards.txt
  * rename the setting parameter and choose a pid that is not in  use
  * please see my modified version attached
- *
- * board profile = Leonardo Aeroplane
- * usb id = HIDFF1
+ * select your new board profile from tools devices
+ * and the correct Arduino from the serial port list
  */
+
+/*
+ * board profile = Arduino Helicopter
+ * usb id = HIDGI1
+ */
+ 
  
 #include "Joystick.h"
 
