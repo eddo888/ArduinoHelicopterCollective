@@ -8,9 +8,15 @@
 //------------------------------------------------------------
 
 /*
- * board profile = Leonardy Aeroplane
+ * to rename the USB device and have multiple joysticks on multiple arduinos,
+ * copy and paste the leonardo arduino section in boards.txt
+ * rename the setting parameter and choose a pid that is not in  use
+ * please see my modified version attached
+ *
+ * board profile = Leonardo Aeroplane
  * usb id = HIDFF1
  */
+ 
 #include "Joystick.h"
 
 #define NUM_BUTTONS 3
@@ -115,9 +121,7 @@ int switchLeft = -1; // screenshot
 int switchRight = -1; // lock collective
 int coveredSwitch = -1; // canopy
 
-// clears after 250 milliseconds
-int digits = -1;
-unsigned long digitsMillis = 0;
+// clears canopy buttons after 250 milliseconds
 unsigned long coveredMillis = 0;
 
 int logging = 0;
