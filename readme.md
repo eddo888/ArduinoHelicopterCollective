@@ -1,11 +1,12 @@
-Please see this excellent eork from M Heironimus
+Please see this excellent work from M Heironimus
 
 git@github.com:MHeironimus/ArduinoJoystickLibrary.git
 
-Here I setup Arduino with micro joystick to drift trim axises and hold at setting, button to reset to neutral. 
+Here I setup Arduino Leonardo with micro joystick to drift trim axis for x and Y which hold at setting, with a button to reset to neutral. 
 
-Has rudders , toe brakes, throttle, 
+Has rudder, toe brakes and a throttle.
 
 Includes a collective with a lock switch to hold it in place electronically. 
 
-also has a canopy on/off generating buttons on SPSP switch.  
+Also has a canopy on/off SPST switch generating temporary buttons for transitions from on->off and off->on
+1
